@@ -1,0 +1,33 @@
+<template name="formCadastroModalidades">
+	<form class="formCadastroModalidades form-horizontal">
+            <!-- Campo Origem -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="Molalidade">Nome da Modalidade:</label>
+                        <input name="modalidade" id="modalidade" type="text" class="form-control" placeholder="Digite o nome da Modalidade">
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="Modalidade">Dia da Semana que ela é oferecida:</label>
+                       	<select name="diaSemana" class="form-control" >
+  							<option value="Segunda" selected>Segunda-Feira</option>
+  							<option value="Terca" selected>Terça-Feira</option>
+  							<option value="Quarta" selected>Quarta-Feira</option>
+  							<option value="Quinta" selected>Quinta-Feira</option>
+  							<option value="Sexta" selected>Sexta-Feira</option>
+  							<option value="Sábado" selected>Sábado</option>
+  						</select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Campo Botão Cadastrar -->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">    
+                    <button type="submit" id="cadastrarModalidade" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+</template>

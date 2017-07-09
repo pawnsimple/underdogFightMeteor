@@ -1,0 +1,16 @@
+<template name="login">
+
+      {{#if currentUser}}
+            
+        <div class="alert alert-info">
+              Você está logado navegue pelo menu para realizar manutenções no site.
+        </div>
+      {{else}}
+      <div class="alert alert-danger">
+                 Você  não está logado, por favor entre com seu facebook.
+       </div>
+      
+      
+      {{/if}}
+       
+</template>

@@ -1,0 +1,50 @@
+<template name="sidebar">
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="admsite">Administração</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                     {{#if currentUser}}
+                        <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="listModalidades" >Listar Modalidades</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="listinstrutores">Listar Instrutores</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="listeventos">Listar Eventos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="listCarrousel">Listar Imagens Carrousel</a>
+                    </li>
+                    <li>
+                        <a id="log-out" class="page-scroll" href="#">Log out</a>
+                    </li>
+                    <li>
+                         <a  class="page-scroll" href="#"> Logado como <strong>{{currentUser.profile.name}}</strong> </a>
+                    </li>
+                       
+                    {{else}}
+                         {{>loginButtons}}
+                    {{/if}}
+                    
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+</template>

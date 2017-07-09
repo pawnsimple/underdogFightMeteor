@@ -1,0 +1,29 @@
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Escola de Artes Marciais">
+    <meta name="author" content="Marcelo Acordi">
+
+    <title>UnderDogFight Administração</title>
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-md-12 col-xs-12 .col-sm-12" >
+			{{> sidebar}}
+		</div> 
+	</div>
+	<!-- This is where main layout is rendered --> 
+</body>
+
+<template name="main_layout">
+	<div class="row main_content">
+		<div class="col-md-12 col-xs-12 .col-sm-12" >
+			{{> yield}}
+		</div>
+	</div>
+</template>

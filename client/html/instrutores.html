@@ -1,0 +1,27 @@
+<template name="instrutores">
+	 <section id="instrutores" class="services-section">
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12">
+                        <div class="row">
+                        {{#each ins}} 
+                                <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                              <img class="no-print" src='{{file}}' alt="">
+                              <div class="caption">
+                                <h3>{{nomeInstrutor}}</h3>
+                                <p> {{descInstrutor}}</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Ver Bio</a> <a href="#" class="btn btn-default" role="button">Entrar em Contato</a></p>
+                              </div>
+                            </div>
+                          </div>
+                           {{/each}}
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+</template>

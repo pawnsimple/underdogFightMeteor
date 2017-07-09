@@ -1,0 +1,31 @@
+<template name="formCadastroEventos">
+	<form class="formCadastroEventos form-horizontal">
+            <!-- Campo Origem -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="titulo">Nome do Evento:</label>
+                        <input name="nomeEvento" id="eventos" type="text" class="form-control" placeholder="Digite o nome do Evento">
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="eventos">Descrição:</label>
+                        <textarea name="descEvento" id="eventos" type="text" class="form-control" placeholder="Digite a Descrição do Evento"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="profileEvento" id="profileEvento" class="profileEvento">
+                
+                    </div> 
+                </div>
+                
+            </div>
+            <br>
+            <!-- Campo Botão Cadastrar -->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">    
+                    <button type="submit" id="cadastrarEventos" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+</template>

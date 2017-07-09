@@ -1,0 +1,31 @@
+<template name="formCadastroInstrutores">
+	<form class="formCadastroInstrutores form-horizontal">
+            <!-- Campo Origem -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="Instrutores">Nome do Instrutor:</label>
+                        <input name="nomeInstrutor" id="Instrutores" type="text" class="form-control" placeholder="Digite o nome do Instrutor">
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="form-group">
+                        <label for="Instrutores">Descrição:</label>
+                        <textarea name="descInstrutor" id="Instrutores" type="text" class="form-control" placeholder="Digite a Descrição do Instrutor"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="profileInstrutor" id="profileInstrutor" class="profileInstrutor">
+                
+                    </div> 
+                </div>
+                
+            </div>
+            <br>
+            <!-- Campo Botão Cadastrar -->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">    
+                    <button type="submit" id="cadastrarInstrutores" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+</template>

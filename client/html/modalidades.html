@@ -1,0 +1,18 @@
+<template name="modalidades">
+	 <section id="modalidades" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-group">
+                      {{#each moda}}
+                      <a class="list-group-item" href="#" data-toggle="tooltip" data-placement="bottom" title='{{diaSemana}}'>{{modalidade}}</a>
+                      {{else}}
+                          <h3>Sem Modalidades</h3>
+                      {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+</template>

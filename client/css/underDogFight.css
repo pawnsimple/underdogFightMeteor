@@ -1,0 +1,34 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color:#F5F5DC;
+  padding-top:20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar {
+	
+	background-color: #F5F5DC;
+}
+
+#sobre {
+	font-size: 15px;
+	text-align: justify;
+}
+
+.list-group-item{
+	font-size: 15px !important;
+}
+
+@media print { .no-print, .no-print * { display: none !important; } }
+
+.alert-success {
+	 background-color:#F5F5DC !important;
+	 color:black;
+}
+.main_content {
+    margin-top:150px;
+}
